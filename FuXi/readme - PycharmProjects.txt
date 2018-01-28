@@ -245,3 +245,15 @@ If I try to install rdflib 2.4.2 I get the following error
 error: Microsoft Visual C++ 9.0 is required. Get it from http://aka.ms/vcpython27
 
 -----------------------------------------------------------------------
+
+Reinstalled
+"Python 3.5.1 (Anaconda3 2.5.0 32-bit)"
+from D:\Data\Downloads\_Have Installed\Programming\ruby with nyaplot\
+since uninstalling it had made no difference.
+Note I only reinstalled it once, but this has been noted into both
+_github\semanticWebInferencing3\FuXi\readme - PycharmProjects.txt
+and
+_github\semanticWebInferencing3\FuXi\fuxi without pycharm\readme - fuxi without pycharm.txt
+
+-----------------------------------------------------------------------
+

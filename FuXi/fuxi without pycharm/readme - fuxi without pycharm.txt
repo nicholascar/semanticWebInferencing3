@@ -71,7 +71,7 @@ Maybe if I added the Scripts folder for each it might work, but i see no point i
 
 ----------------------------------------------------------------
 
-Uninstalled "Python 3.5.1 (Anaconda3 2.5.0 32-bit) since it appears that could
+Uninstalled "Python 3.5.1 (Anaconda3 2.5.0 32-bit)" since it appears that could
 be what's causing the problems.
 
 https://docs.python.org/3/install/index.html?highlight=distutils%20cfg
@@ -88,6 +88,17 @@ D:\Programming\Python\Python2.7.14\Scripts\pip install https://pypi.python.org/p
 gives error message:
 collect2: ld returned 1 exit status
     error: command 'D:\\Programming\\mingw\\bin\\gcc.exe' failed with exit status 1
+
+----------------------------------------------------------------
+
+Reinstalled
+"Python 3.5.1 (Anaconda3 2.5.0 32-bit)"
+from D:\Data\Downloads\_Have Installed\Programming\ruby with nyaplot\
+since uninstalling it had made no difference.
+Note I only reinstalled it once, but this has been noted into both
+_github\semanticWebInferencing3\FuXi\readme - PycharmProjects.txt
+and
+_github\semanticWebInferencing3\FuXi\fuxi without pycharm\readme - fuxi without pycharm.txt
 
 ----------------------------------------------------------------
 
