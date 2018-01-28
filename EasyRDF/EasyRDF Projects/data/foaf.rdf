@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:cert="http://www.w3.org/ns/auth/cert#"
+         xmlns:dc="http://purl.org/dc/terms/">
+
+  <foaf:PersonalProfileDocument rdf:about="http://njh.me/foaf.rdf">
+    <rdfs:label>Nicholas Humfrey's FOAF File</rdfs:label>
+    <foaf:maker rdf:resource="http://njh.me/"/>
+    <foaf:primaryTopic rdf:resource="http://njh.me/"/>
+  </foaf:PersonalProfileDocument>
+
+  <foaf:Person rdf:about="http://njh.me/">
+    <foaf:name>Nicholas J Humfrey</foaf:name>
+    <foaf:title>Mr</foaf:title>
+    <foaf:givenName>Nicholas</foaf:givenName>
+    <foaf:familyName>Humfrey</foaf:familyName>
+    <owl:sameAs>
+      <foaf:Person rdf:about="http://www.aelius.com/njh#me">
+        <rdfs:label>Nicholas Humfrey</rdfs:label>
+        <owl:sameAs rdf:resource="http://njh.me/"/>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/"/>
+      </foaf:Person>
+    </owl:sameAs>
+
+    <owl:sameAs rdf:resource="http://dbtune.org/last-fm/njh"/>
+    <cert:key>
+      <cert:RSAPublicKey>
+        <cert:modulus rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">CD86DF85BAD4EFD5D3F08B32040E70D5F64445FF5739B562498F1ECB0B381CDD74273DC17B488CDC09D1A832158FFEEDF179D3E061F8C73E2823CF4862EA2E3C3001C20563FB30CBC1E9939B05178F923991CC0EE6A30A564C74DA8686F5F94D65C41DBA558F0C606315DF87E1CC093D08F10BDF63DA9A96BEF2E842F700CB42BFD1404D90CDB5DF492523AF4D1CF382434BFB13BDFFE3DD077DCE98757B3CDA25E38F3F55BCBB33ACF674E2891B01DF5D7FDE3888A6559742492FDA74B544F140C1F4D356EE4ED1C801382C2F7524DB1FE41415A22340EE75B149AE8479B18B6B0EB10E9E865F0103E9BDC8E710E7EDF3E0D4ED809B88A2F19B43DC9B3DEF1D</cert:modulus>
+        <cert:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65537</cert:exponent>
+      </cert:RSAPublicKey>
+    </cert:key>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-bbc">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://www.bbc.co.uk/"/>
+        <foaf:name>BBC</foaf:name>
+        <foaf:page rdf:resource="http://www.bbc.co.uk/users/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-cpan">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://search.cpan.org/"/>
+        <foaf:name>CPAN</foaf:name>
+        <foaf:page rdf:resource="http://search.cpan.org/~njh/"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-delicious">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://delicious.com/"/>
+        <foaf:name>delicious</foaf:name>
+        <foaf:page rdf:resource="http://delicious.com/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-digg">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://digg.com/"/>
+        <foaf:name>Digg</foaf:name>
+        <foaf:page rdf:resource="http://digg.com/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-ebay">
+        <foaf:accountName>n.humfrey</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://www.ebay.co.uk/"/>
+        <foaf:name>eBay</foaf:name>
+        <foaf:page rdf:resource="http://myworld.ebay.co.uk/n.humfrey"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-facebook">
+        <foaf:accountName>508996252</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://www.facebook.com/"/>
+        <foaf:name>facebook</foaf:name>
+        <foaf:page rdf:resource="http://www.facebook.com/people/Nick-Humfrey/508996252"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-flickr">
+        <foaf:accountName>77198640@N00</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://www.flickr.com/"/>
+        <foaf:name>flickr</foaf:name>
+        <foaf:page rdf:resource="http://www.flickr.com/people/njh/"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-geocaching">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://www.geocaching.com/"/>
+        <foaf:name>Geocaching</foaf:name>
+        <foaf:page rdf:resource="http://www.geocaching.com/profile/?guid=b3392841-3b20-4827-ad5f-0a8f060bc960"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-github">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://github.com/"/>
+        <foaf:name>github</foaf:name>
+        <foaf:page rdf:resource="http://github.com/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-identica">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://identi.ca/"/>
+        <foaf:name>identi.ca</foaf:name>
+        <foaf:page rdf:resource="http://identi.ca/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-lastfm">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://www.last.fm/"/>
+        <foaf:name>last.fm</foaf:name>
+        <foaf:page rdf:resource="http://www.last.fm/user/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-linkedin">
+        <foaf:accountName>nicholashumfrey</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://www.linkedin.com/"/>
+        <foaf:name>LinkedIn</foaf:name>
+        <foaf:page rdf:resource="http://www.linkedin.com/in/nicholashumfrey"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-musicbrainz">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://musicbrainz.org/"/>
+        <foaf:name>MusicBrainz</foaf:name>
+        <foaf:page rdf:resource="http://musicbrainz.org/user/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-rubyforge">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://rubyforge.org/"/>
+        <foaf:name>RubyForge</foaf:name>
+        <foaf:page rdf:resource="http://rubyforge.org/users/njh/"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-sourceforge">
+        <foaf:accountName>nhumfrey</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://sourceforge.net/"/>
+        <foaf:name>SourceForge</foaf:name>
+        <foaf:page rdf:resource="http://sourceforge.net/users/nhumfrey"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-twitter">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://twitter.com/"/>
+        <foaf:name>Twitter</foaf:name>
+        <foaf:page rdf:resource="http://twitter.com/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:account>
+      <foaf:OnlineAccount rdf:about="http://njh.me/#account-youtube">
+        <foaf:accountName>njh</foaf:accountName>
+        <foaf:accountServiceHomepage rdf:resource="http://youtube.com/"/>
+        <foaf:name>YouTube</foaf:name>
+        <foaf:page rdf:resource="http://youtube.com/njh"/>
+      </foaf:OnlineAccount>
+    </foaf:account>
+
+    <foaf:based_near rdf:resource="http://dbpedialite.org/things/17867#id"/>
+    <foaf:gender>Male</foaf:gender>
+    <foaf:homepage rdf:resource="http://www.aelius.com/njh/"/>
+    <foaf:made rdf:resource="http://www.aelius.com/njh/"/>
+    <foaf:img rdf:resource="http://www.aelius.com/njh/me.jpg"/>
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/6021#id">
+        <dc:title>C</dc:title>
+        <rdfs:label>C</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/5931#id">
+        <dc:title>Cycling</dc:title>
+        <rdfs:label>Cycling</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/8242#id">
+        <dc:title>Debian</dc:title>
+        <rdfs:label>Debian</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/87606#id">
+        <dc:title>Electronica</dc:title>
+        <rdfs:label>Electronica</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/166919#id">
+        <dc:title>Rats</dc:title>
+        <rdfs:label>Rats</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/2527345#id">
+        <dc:title>Multicast</dc:title>
+        <rdfs:label>Multicast</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/15318#id">
+        <dc:title>IPv6</dc:title>
+        <rdfs:label>IPv6</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/6097297#id">
+        <dc:title>Linux</dc:title>
+        <rdfs:label>Linux</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest rdf:resource="http://dbpedialite.org/things/17867#id"/>
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/32695816#id">
+        <dc:title>MQTT</dc:title>
+        <rdfs:label>MQTT</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/19006979#id">
+        <dc:title>Mac</dc:title>
+        <rdfs:label>Mac</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/18933632#id">
+        <dc:title>Metadata</dc:title>
+        <rdfs:label>Metadata</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/20341#id">
+        <dc:title>Mountaineering</dc:title>
+        <rdfs:label>Mountaineering</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/18839#id">
+        <dc:title>Music</dc:title>
+        <rdfs:label>Music</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/20797#id">
+        <dc:title>MusicBrainz</dc:title>
+        <rdfs:label>MusicBrainz</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/384788#id">
+        <dc:title>OSC</dc:title>
+        <rdfs:label>OSC</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/277663#id">
+        <dc:title>Open Source</dc:title>
+        <rdfs:label>Open Source</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/23939#id">
+        <dc:title>Perl</dc:title>
+        <rdfs:label>Perl</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/173088#id">
+        <dc:title>Radio</dc:title>
+        <rdfs:label>Radio</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/26163#id">
+        <dc:title>RTP</dc:title>
+        <rdfs:label>RTP</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/53847#id">
+        <dc:title>RDF</dc:title>
+        <rdfs:label>RDF</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/25768#id">
+        <dc:title>Ruby</dc:title>
+        <rdfs:label>Ruby</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/31871#id">
+        <dc:title>Pervasive Computing</dc:title>
+        <rdfs:label>Pervasive Computing</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:interest>
+      <rdf:Description rdf:about="http://dbpedialite.org/things/33172#id">
+        <dc:title>Wireless</dc:title>
+        <rdfs:label>Wireless</rdfs:label>
+      </rdf:Description>
+    </foaf:interest>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://barkingiguana.com/~craig/foaf.rdf#me">
+        <rdfs:label>Craig Webster</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://danbri.org/foaf.rdf#danbri">
+        <rdfs:label>Dan Brickley</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://mmt.me.uk/foaf.rdf#mischa">
+        <rdfs:label>Mischa Tuffield</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://moustaki.org/foaf.rdf#moustaki">
+        <rdfs:label>Yves Raimond</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://plugin.org.uk/swh.xrdf#me">
+        <rdfs:label>Steve Harris</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://purl.org/net/das301.xrdf#me">
+        <rdfs:label>Daniel Smith</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://tomheath.com/id/me">
+        <rdfs:label>Tom Heath</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://www.dajobe.org/foaf.rdf#i">
+        <rdfs:label>Dave Beckett</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://greggkellogg.net/foaf#me">
+        <rdfs:label>Gregg Kellogg</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:about="http://www.metade.org/foaf.rdf#me">
+        <rdfs:label>Patrick Sinclair</rdfs:label>
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:mbox rdf:resource="mailto:njh@aelius.com"/>
+    <foaf:mbox_sha1sum>3f361af12a473b48852819e3ff9153783149a26a</foaf:mbox_sha1sum>
+    <foaf:mbox_sha1sum>a8476e8096db2bde20a734c8446bb3d60befea2b</foaf:mbox_sha1sum>
+    <foaf:nick>nick</foaf:nick>
+    <foaf:openid rdf:resource="http://www.aelius.com/njh/"/>
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-captivednsd">
+        <dc:description>Captive Portal DNS server.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/captivednsd/"/>
+        <foaf:name>captivednsd</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-dbpedialite">
+        <dc:description>Wikipedia as Linked Data.</dc:description>
+        <foaf:homepage rdf:resource="http://dbpedialite.org/"/>
+        <foaf:name>dbpedia lite</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-dvbshout">
+        <dc:description>Stream DVB audio to Icecast/Shoutcast.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/dvbshout/"/>
+        <foaf:name>dvbshout</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-easyrdf">
+        <dc:description>PHP library to make using RDF easy.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/easyrdf/"/>
+        <foaf:name>EasyRdf</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-jackmeter">
+        <dc:description>Console based Digital Peak Meter for JACK.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/jackmeter/"/>
+        <foaf:name>JACK Meter</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-jackminimix">
+        <dc:description>Simple JACK Mixer controlled using OSC.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/jackminimix/"/>
+        <foaf:name>Jack MiniMix</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-madjack">
+        <dc:description>MPEG Audio Deck with OSC support for JACK.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/madjack/"/>
+        <foaf:name>MadJACK</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-mast">
+        <dc:description>Multicast Audio Streaming Toolkit</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/mast/"/>
+        <foaf:name>MAST</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-redstore">
+        <dc:description>Lightweight RDF Triplestore powered by Redland.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/redstore/"/>
+        <foaf:name>RedStore</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-rotter">
+        <dc:description>Recording of Transmission / Audio Logger for JACK.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/rotter/"/>
+        <foaf:name>Rotter</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-silentjack">
+        <dc:description>Silence/dead air detector for JACK.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/silentjack/"/>
+        <foaf:name>SilentJACK</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-ts2mpa">
+        <dc:description>Convert MPEG-2 transport stream to MPEG Audio.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/ts2mpa/"/>
+        <foaf:name>ts2mpa</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:currentProject>
+      <foaf:Project rdf:about="http://njh.me/#project-twolame">
+        <dc:description>MPEG Audio Layer 2 Encoder.</dc:description>
+        <foaf:homepage rdf:resource="http://www.twolame.org/"/>
+        <foaf:name>TwoLAME</foaf:name>
+      </foaf:Project>
+    </foaf:currentProject>
+
+    <foaf:pastProject>
+      <foaf:Project rdf:about="http://njh.me/#project-asciitable">
+        <dc:description>ASCII character set table for Mac OS X.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/asciitable/"/>
+        <foaf:name>ASCII Table</foaf:name>
+      </foaf:Project>
+    </foaf:pastProject>
+
+    <foaf:pastProject>
+      <foaf:Project rdf:about="http://njh.me/#project-electromac">
+        <dc:description>Electronics interface for Mac.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/electromac/"/>
+        <foaf:name>Electromac</foaf:name>
+      </foaf:Project>
+    </foaf:pastProject>
+
+    <foaf:pastProject>
+      <foaf:Project rdf:about="http://njh.me/#project-ino711d">
+        <dc:description>HTTP interface for Inovonics 711 RDS Generator.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/ino711d/"/>
+        <foaf:name>ino711d</foaf:name>
+      </foaf:Project>
+    </foaf:pastProject>
+
+    <foaf:pastProject>
+      <foaf:Project rdf:about="http://njh.me/#project-liblo">
+        <dc:description>Lightweight OSC implementation.</dc:description>
+        <foaf:homepage rdf:resource="http://liblo.sourceforge.net/"/>
+        <foaf:name>liblo</foaf:name>
+      </foaf:Project>
+    </foaf:pastProject>
+
+    <foaf:pastProject>
+      <foaf:Project rdf:about="http://njh.me/#project-mpg123">
+        <dc:description>Commandline MPEG Audio Player and library.</dc:description>
+        <foaf:homepage rdf:resource="http://www.mpg123.org/"/>
+        <foaf:name>mpg123</foaf:name>
+      </foaf:Project>
+    </foaf:pastProject>
+
+    <foaf:pastProject>
+      <foaf:Project rdf:about="http://njh.me/#project-ssmpinglg">
+        <dc:description>Web interface to ssmping.</dc:description>
+        <foaf:homepage rdf:resource="http://www.multicast.org.uk/lg/"/>
+        <foaf:name>ssmping Looking Glass</foaf:name>
+      </foaf:Project>
+    </foaf:pastProject>
+
+    <foaf:pastProject>
+      <foaf:Project rdf:about="http://njh.me/#project-wavemetatools">
+        <dc:description>Tools for WAVE files with metadata.</dc:description>
+        <foaf:homepage rdf:resource="http://www.aelius.com/njh/wavemetatools/"/>
+        <foaf:name>Wave Meta Tools</foaf:name>
+      </foaf:Project>
+    </foaf:pastProject>
+
+    <foaf:workplaceHomepage>
+      <foaf:Document rdf:about="http://www.bbc.co.uk/radio/">
+        <rdfs:label>BBC Radio and Music Online</rdfs:label>
+      </foaf:Document>
+    </foaf:workplaceHomepage>
+
+    <foaf:schoolHomepage>
+      <foaf:Document rdf:about="http://www.ecs.soton.ac.uk/">
+        <rdfs:label>Electronics and Computer Science, University of Southampton</rdfs:label>
+      </foaf:Document>
+    </foaf:schoolHomepage>
+
+  </foaf:Person>
+
+  <foaf:Document rdf:about="http://www.aelius.com/njh/">
+    <rdfs:label>Homepage of Nicholas J Humfrey</rdfs:label>
+  </foaf:Document>
+
+  <rdf:Description rdf:about="http://dbpedialite.org/things/17867#id">
+    <dc:title>London</dc:title>
+    <rdfs:label>London</rdfs:label>
+  </rdf:Description>
+
+</rdf:RDF>

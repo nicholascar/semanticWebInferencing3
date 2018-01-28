@@ -1,0 +1,13 @@
+https://wordpress.org/support/topic/php-7-0-14-to-7-1-1-operator-not-supported-for-strings/
+
+D:\Data\Other\_volunteering\2018\_successful\www.csiro.au\_volunteer NC\10. 2018jan28 EasyRDF\EasyRDF Projects\src\vendor\easyrdf\easyrdf\lib\EasyRdf\Serialiser\GraphViz.php
+Changed Line 223, 224 from
+
+$items = '';
+
+to
+
+//$items = ''; // jevan 2018jan28
+
+$items = []; // jevan 2018jan28
+
