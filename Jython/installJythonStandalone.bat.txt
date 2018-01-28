@@ -1,0 +1,4 @@
+rem generate python.jar
+echo When you come to the Installation type page select Standalone
+java -jar jython-installer-2.7.0.jar
+pause

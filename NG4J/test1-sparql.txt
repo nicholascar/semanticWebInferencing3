@@ -1,0 +1,11 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?otherFoafFile
+WHERE {
+  GRAPH <http://example.org/my-foaf.rdf> {
+    ?me foaf:mbox <mailto:me@example.org> .
+  }
+  GRAPH ?otherFoafFile {
+    ?otherFoafFile foaf:maker ?someone
+    ?someone foaf:knows ?me .
+  }
+}

@@ -1,0 +1,26 @@
+usage: semwebquery [parameters]
+
+    -sparql <query>        Execute a SPARQL query
+    -sparqlfile <file>     Execute a SPARQL query loaded from a file
+    -find "s p o"          Execute a find query with an N-Triple style pattern;
+                           use ANY as a wildcard
+    -maxsteps <steps>      Set maximal depth of link following. Default: 3
+    -maxfilesize <size>    Set maximal filesize in bytes of URIs to retrieve. Default: 100000000
+    -maxthreads <threads>  Set number of threads for loading URIs. Default: 10
+    -timeout <seconds>     Set query timeout. Default: 60 seconds
+    -load <URL>            Load seed graph from the Web
+    -grddl                 Perform GRDDL transformations (Notice, GRDDL support is deprecated!!)
+    -NoRDFa                Disables RDFa support
+    -sindice               Enables Sindice-based URI search during query execution
+    -loadtrig <file>       Load seed graphs from a TriG file before starting
+    -savetrig <file>       Save loaded graphs to a TriG file after finishing
+    -retrieveduris         Output a list of all successfully retrieved URIs
+    -faileduris            Output a list of URIs that could not be retrieved
+    -redirecteduris        Output a mapping of URIs that have been redirected
+    -resultfmt <format>    Specifies the output format for the result of a SPARQL query:
+                           - for SELECT and ASK queries use TXT, XML, or JSON
+                             (default: TXT);
+                           - for CONSTRUCT or DESCRIBE queries use RDF/XML,
+                             N-TRIPLE, TURTLE, or N3 (default: RDF/XML)
+    -verbose               Show additional progress information
+

@@ -1,0 +1,5 @@
+google search: python tdb fuseki
+https://stackoverflow.com/questions/7634618/jena-tdb-in-python
+http://www.jython.org/
+https://wiki.python.org/jython/InstallationInstructions
+http://www.jython.org/docs/library/indexprogress.html

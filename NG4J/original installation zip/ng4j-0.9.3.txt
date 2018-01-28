@@ -1,0 +1,3 @@
+http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/
+https://sourceforge.net/projects/ng4j/
+http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/semwebclient/

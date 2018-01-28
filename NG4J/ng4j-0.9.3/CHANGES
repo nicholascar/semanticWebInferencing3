@@ -1,0 +1,136 @@
+Release 0.9.3
+-------------
+
+02/10/10 (timp)
+Upgrade to Jena 0.6.2
+Ensure pom and build.xml work with Hudson
+disable failing tests
+
+11/24/09 (Olaf)
+Added the possibility for conditional GET requests during dereferencing.
+Added the HTTP response header fields to the DereferencingResult.
+
+09/21/09 (Jennifer)
+Changed SWPSignatureUtilities and SWPAuthorityImpl to not chunk digests (add carriage return after 76 characters).  This is consistent with the behavior of the sun library digest method that was replaced in NG4J version 0.9.2.
+
+08/27/09 (Olaf)
+Added a SPARQL query engine for the identifier based graph implementation. This was necessary because query processing was changed with the latest version of the ARQ engine so that query execution performance couldn't benefit from our ID-based BGP query evaluation (see commit from 05/24/09). The new engine is as fast as old ARQ with the ID-based BGP evaluation. Furthermore, the new engine enables a true integration of ID-based query evaluation in the Semantic Web Client Library which is impossible with the ID-based BGP evaluation approach due to the way ARQ executes queries.
+
+08/26/09 (Olaf)
+Changed the API of IdBasedGraph (replaced getId and getNode by getNodeDictionary).
+
+Release 0.9.2
+-------------
+
+08/16/09 (Olaf)
+Moved everything that is not Named Graphs specific from package 'de.fuberlin.wiwiss.ng4j.impl.idbased' to the packages 'de.fuberlin.wiwiss.jenaext' and 'de.fuberlin.wiwiss.jenaext.impl'.
+
+08/14/09 (Olaf)
+Added RDFa support to the Semantic Web Client Lib.
+
+08/11/09 (Olaf)
+Separated the configuration from the SemanticWebClient class.
+
+07/30/09 (TimP) 
+Fixed warnings from ant and Eclipse. Tagged v0_9_1_for_Jena_2_5_7
+
+07/29/09 (TimP) 
+Replaced references to sun.misc.Base64Encoder and sun.misc.Base64Decoder with commons-codec. 
+
+06/23/09 (Olaf)
+Applied patch 2806623: fixes a minor bug in the TRIG parser causing a NPE when reading default graphs such as in the example 3 at http://www4.wiwiss.fu-berlin.de/bizer/TriG/#example
+
+Release 0.9.1
+-------------
+
+06/11/09 (Jennifer)
+Commit, with a few minor modifications like the version #, the pom.xml file submitted by Tim Pizey in feature request "Bring Maven POM upto date - ID: 2801813".
+
+06/10/09 (Jennifer)
+Moved the failing SWP test to a separate file so that it can be excluded from Maven builds.
+
+06/10/09 (Olaf)
+Applied feature request 2801765 to build.xml to add the version number to builds and also remove the grammar.triql target since TriQL has been removed. 
+
+06/10/09 (Jennifer)
+Upgraded the axis library to version 1.4.
+Removed the jakarta-oro library since it was only used for TriQL, which has been removed.
+
+06/10/09 (Olaf)
+Fixed bug in DereferencerThread::parseRdf - an undefined 'lang' string would have caused a NullPointerException.
+
+06/09/09 (Olaf)
+Moved the identifier based graph implementation from 'de.fuberlin.wiwiss.ng4j.semwebclient.graph' to 'de.fuberlin.wiwiss.ng4j.impl.idbased'.
+
+06/09/09 (Olaf)
+Fixed bug in the fix introduced on 04/13/09
+
+06/08/09 (Jennifer)
+Fixed bugs in classes (SWPNamedGraphSetImpl and SWPWarrantImpl) where bitwise and was used instead of logical and.
+
+06/03/09 (Jennifer)
+Upgraded the Bouncy Castle libraries from version 1.41 to version 1.43.
+
+05/27/09 (Jennifer)
+Simplify and improve NamedGraphModel code.
+Add classes SingleNamedGraphModel, SingleNamedGraphStatement, SingleNamedGraphResourceImpl, and SingleNamedGraphStatementIterator.
+
+05/24/09 (Olaf)
+Enabled the new BGP query evaluation commited on 05/08/09. For details see:
+  http://apps.sourceforge.net/wordpress/squin/2009/05/24/new-bgp-query-handler-for-the-semantic-web-client-library-reduces-query-times-to-a-third/
+
+05/23/09 (Olaf)
+Bug fixes in the SemWebClLib: eliminated two concurrency issues
+
+05/10/09 (Olaf)
+Bug fix in the SemWebClLib: eliminated a memory leak in the TimeoutThread of FindQuery
+
+05/08/09 (Olaf)
+First commit of a new implementation for BGP query evaluation that can be used for RDF graph implementations which use identifiers for RDF nodes
+
+05/08/09 (Olaf)
+Bug fix in the SemWebClLib: eliminated a concurrency issue in TaskQueueBase
+
+05/07/09 (Olaf)
+Minor performance improvement - implemented a custom determination of the size of a SWClGraphMem
+
+04/25/09 (Olaf)
+Finished the SemWebClLib-specific Graph implementation which improves performance of query executions. For details see:
+  http://apps.sourceforge.net/wordpress/squin/2009/04/25/identified-a-proper-index-size-for-the-new-swcllib-storage-solution/
+
+04/13/09 (Olaf)
+Fixed bug in TriG writer - some namespace prefixes were used without being defined
+
+02/08/09 (Olaf)
+First commit of a SemWebClLib-specific Graph implementation which improves performance of query executions. For details see:
+  http://apps.sourceforge.net/wordpress/squin/2009/03/28/new-storage-solution-for-the-semantic-web-client-library/
+
+02/23/09 (Olaf)
+Bug fix in the SemWebClLib: pending deref tasks for find queries are identified by the corresponding URIs; in case of hash-URIs: mismatch between requested and dereferenced URI caused blocking until timeouts; now: cut off hash part identifying URIs; huge performance gain!
+
+Release 0.9
+-----------
+
+02/12/09 (Jennifer)
+We neglected to update from wstx-asl-2.8.jar to wstx-asl-3.0.0.jar when we upgraded to ARQ 2.4 for release 0.8 of ng4j.  Updated the library.
+Generalize the sizes of fields used for databases which allow variable-length varchars.  The field size is set in DbCompatibility and used (in classes which support it) when tables are initially created.
+
+02/10/09 (Jennifer)
+Fixed NamedGraphModel code so that when it uses a TriGWriter, the writer includes the model's namespace prefix map.
+This fix was supplied by Daryl McCullough of Architecture Technology Corporation.
+
+01/21/09 (Olaf)
+Removed TriQL
+
+01/19/09 (Jennifer)
+Add support for Apache Derby database.
+Change Eclipse compiler settings for project to require Java 1.5 instead of 1.4.
+
+01/16/09 (Olaf)
+Applied Jennifer's patch: 2496503 "Refactor SWP code and remove deprecated TriQL"
+
+01/15/09 (Olaf)
+Bug fix in the SemWebClLib: Multiple deref listeners can be attached to a single deref task. Due to this change, multiple find queries may benefit from the graph retrieved for the task.
+
+Release 0.8
+-----------

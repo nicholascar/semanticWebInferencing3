@@ -1,0 +1,22 @@
+cd ng4j-0.9.3\src
+set "libraries=..\lib\*"
+set "javac="C:\Program Files\Java\jdk1.8.0_144\bin\javac""
+set "java="C:\Program Files\Java\jdk1.8.0_144\bin\java""
+set "output=..\..\output"
+set "javafile=query"
+
+set "programargs=-sparqlfile ..\..\test1-sparql.txt"
+set "outputidnumber=1"
+Call :CompileAndRun
+
+set "programargs="
+set "outputidnumber=2"
+Call :CompileAndRun
+
+Goto:EOF
+
+:CompileAndRun
+%javac% -classpath %libraries% semweb\%javafile%.java 2> %output%\%javafile%%outputidnumber%_compile.txt
+%java% -classpath %libraries%;. %javaargs% semweb.%javafile% %programargs% > %output%\%javafile%%outputidnumber%_output1.txt 2> %output%\%javafile%%outputidnumber%_output2.txt
+GOTO:EOF
+
