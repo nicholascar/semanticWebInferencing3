@@ -1,4 +1,4 @@
-echo first start fuseki if not already
-echo D:\Programming\apache-jena-fuseki-3.4.0 openllet\fuseki-server.bat
+@echo first start fuseki if not already
+@echo D:\Programming\apache-jena-fuseki-3.4.0 openllet\fuseki-server.bat
 php sparqllib-test.php > sparqllib-test-output.html
 pause
