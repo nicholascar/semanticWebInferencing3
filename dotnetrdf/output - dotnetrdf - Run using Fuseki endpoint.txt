@@ -1,0 +1,16 @@
+Starting - Run using Fuseki endpoint
+Total tuples: 7
+<http://example.org/relatives#James> <http://example.org/relatives#hasGrandparent> <http://example.org/relatives#Cathy> .
+
+<http://example.org/relatives#Mary> <http://example.org/relatives#hasGrandparent> <http://example.org/relatives#James2> .
+
+<http://example.org/relatives#Michael> <http://example.org/relatives#hasGrandparent> <http://example.org/relatives#James2> .
+
+<http://example.org/relatives#Tim> <http://example.org/relatives#hasGrandparent> <http://example.org/relatives#Michael> .
+
+<http://example.org/relatives#Simon> <http://example.org/relatives#hasGrandparent> <http://example.org/relatives#John> .
+
+<http://example.org/relatives#Jacob> <http://example.org/relatives#hasGrandparent> <http://example.org/relatives#Cathy> .
+
+<http://example.org/relatives#Fred> <http://example.org/relatives#hasGrandparent> <http://example.org/relatives#Bill> .
+

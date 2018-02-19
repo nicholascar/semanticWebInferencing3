@@ -1,0 +1,64 @@
+Starting - Run using relatives.ttl
+Loaded relatives.ttl
+Grandparent query gave 0 result(s)
+Results for * query of all triples:
+?a = http://example.org/relatives , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#Ontology
+?a = http://example.org/relatives#hasChild , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#ObjectProperty
+?a = http://example.org/relatives#hasChild , ?b = http://www.w3.org/2002/07/owl#inverseOf , ?c = http://example.org/relatives#hasParent
+?a = http://example.org/relatives#hasParent , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#ObjectProperty
+?a = http://example.org/relatives#hasGrandparent , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#ObjectProperty
+?a = _:autos1 , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#first , ?c = http://example.org/relatives#hasParent
+?a = _:autos1 , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#rest , ?c = _:autos2
+?a = _:autos2 , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#first , ?c = http://example.org/relatives#hasParent
+?a = _:autos2 , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#rest , ?c = http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
+?a = http://example.org/relatives#hasGrandparent , ?b = http://www.w3.org/2002/07/owl#propertyChainAxiom , ?c = _:autos1
+?a = http://example.org/relatives#Child , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#Class
+?a = http://example.org/relatives#Child , ?b = http://www.w3.org/2000/01/rdf-schema#subClassOf , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Parent , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#Class
+?a = http://example.org/relatives#Parent , ?b = http://www.w3.org/2000/01/rdf-schema#subClassOf , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Person , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#Class
+?a = http://example.org/relatives#Aaron , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Ann , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Ann , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Bill , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Bill , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Bob , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Bob , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Bob , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#Bill
+?a = http://example.org/relatives#Cathy , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Cathy , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Cathy , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#Bill
+?a = http://example.org/relatives#Fred , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Fred , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Fred , ?b = http://example.org/relatives#hasChild , ?c = http://example.org/relatives#James
+?a = http://example.org/relatives#Fred , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#Cathy
+?a = http://example.org/relatives#Jacob , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Jacob , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Jacob , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#Fred
+?a = http://example.org/relatives#James , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#James , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#James2 , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#James2 , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#James2 , ?b = http://example.org/relatives#hasChild , ?c = http://example.org/relatives#John
+?a = http://example.org/relatives#John , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#John , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#John , ?b = http://example.org/relatives#hasChild , ?c = http://example.org/relatives#Mary
+?a = http://example.org/relatives#John , ?b = http://example.org/relatives#hasChild , ?c = http://example.org/relatives#Michael
+?a = http://example.org/relatives#John , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#James2
+?a = http://example.org/relatives#Mary , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Mary , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Michael , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Michael , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Michael , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#John
+?a = http://example.org/relatives#Simon , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Simon , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Simon , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#Michael
+?a = http://example.org/relatives#Tim , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Tim , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Tim , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#Simon
+?a = http://example.org/relatives#Tim , ?b = http://example.org/relatives#hasParent , ?c = http://example.org/relatives#Valerie
+?a = http://example.org/relatives#Valerie , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Valerie , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+?a = http://example.org/relatives#Victor , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://www.w3.org/2002/07/owl#NamedIndividual
+?a = http://example.org/relatives#Victor , ?b = http://www.w3.org/1999/02/22-rdf-syntax-ns#type , ?c = http://example.org/relatives#Person
+

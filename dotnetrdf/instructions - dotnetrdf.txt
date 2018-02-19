@@ -1,0 +1,20 @@
+Start "Visual Studio 2017" (community edition) software
+File, New, Project, .NET Framework 4.6.2, Windows Forms App, Visual C#
+Name: Dotnetrdf Test
+Location: D:\Data\Other\_volunteering\2018\_successful\www.csiro.au\_volunteer NC\_github\semanticWebInferencing3\dotnetrdf\vs
+Solution Name: Dotnetrdf Test
+(ticked) create directory for solution
+
+Tools, NuGet Package Manager, Manage NuGet Packages for solution
+dotNetRDF, tick project "Dotnetrdf Test", select version "Latest stable 2.0.1"
+clicked Install
+
+dotNetRDF is a RDF, SPARQL and Semantic Web API for .Net.  It provides simple but powerfully extensible APIs for this and integrates with a variety of popular triple stores.
+
+Create folder data in project
+
+D:\Data\Other\_volunteering\2018\_successful\www.csiro.au\_volunteer NC\_github\semanticWebInferencing3\dotnetrdf\vs\Dotnetrdf Test\Dotnetrdf Test\data
+
+and placed relatives.ttl into it and then added it to the project
+with "Copy if newer"
+
