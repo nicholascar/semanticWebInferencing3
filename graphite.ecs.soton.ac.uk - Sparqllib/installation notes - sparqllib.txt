@@ -1,0 +1,8 @@
+in D:\Programming\php-7.2.1-Win32-VC15-x64\php.ini change
+
+;extension=curl
+
+to
+
+extension=curl
+
