@@ -1,4 +1,0 @@
-@echo this creates the vendor folder, set for php to be able to use the requirements as specified in composer.json, which I have already created
-@echo all that is then necessary is for the php file to include the vendor autoload file, which i have already done
-php C:\ProgramData\ComposerSetup\bin\composer.phar install
-pause

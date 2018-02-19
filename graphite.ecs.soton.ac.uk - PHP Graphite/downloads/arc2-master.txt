@@ -1,2 +1,0 @@
-https://github.com/semsol/arc2/archive/master.zip
-http://graphite.ecs.soton.ac.uk/

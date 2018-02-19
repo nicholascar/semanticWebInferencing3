@@ -1,2 +1,0 @@
-Converted from turtle to rdf xml using
-http://www.easyrdf.org/converter

@@ -1,2 +1,0 @@
-http://graphite.ecs.soton.ac.uk/download.php/Graphite.php
-http://graphite.ecs.soton.ac.uk/
