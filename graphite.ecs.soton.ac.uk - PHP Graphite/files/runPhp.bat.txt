@@ -1,0 +1,4 @@
+echo first start fuseki if not already
+echo D:\Programming\apache-jena-fuseki-3.4.0 openllet\fuseki-server.bat
+php graphiteTest1.php > graphiteTest1-output.html
+pause
