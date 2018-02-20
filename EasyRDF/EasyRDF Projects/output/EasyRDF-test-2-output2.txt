@@ -1,4 +1,0 @@
-PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\Data\Other\_volunteering\2018\_successful\www.csiro.au\_volunteer NC\_github\semanticWebInferencing3\EasyRDF\EasyRDF Projects\src\EasyRDF-test-2.php:7
-Stack trace:
-#0 {main}
-  thrown in D:\Data\Other\_volunteering\2018\_successful\www.csiro.au\_volunteer NC\_github\semanticWebInferencing3\EasyRDF\EasyRDF Projects\src\EasyRDF-test-2.php on line 7
