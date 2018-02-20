@@ -18,7 +18,7 @@
 
 /*
 Other authors that have modified the code:
-Jevan Pipitone, Last Edit 20 February 2018
+Jevan Pipitone, Last Edit 21 February 2018
 */
 
     set_include_path(get_include_path() . PATH_SEPARATOR . '../lib/');
@@ -46,13 +46,20 @@ Jevan Pipitone, Last Edit 20 February 2018
     $graph = new EasyRdf_Graph();
     $graph->parseFile("../data/relatives.rdf");
 
+/*
+http://www.easyrdf.org/examples
+Using the 'Use Labels' option, you can have resource URIs replaced with text based labels
+and using 'Only Labelled' option, only the resources and properties with a label will be displayed.
+Rending a graph to an image will only work if you have the GraphViz 'dot' command installed.
+*/
     // Create a GraphViz serialiser
     $gv = new EasyRdf_Serialiser_GraphViz();
     $gv->setUseLabels($ul); // jevan 2018jan28
     $gv->setOnlyLabelled($ol); // jevan 2018jan28
 
     // If this is a request for the image, just render it and exit
-    if (isset($image)) { // jevan 2018jan28
+    //if (isset($image)) { // jevan 2018jan28
+    if ($image) { // jevan 2018jan28
         header("Content-Type: ".$format->getDefaultMimeType());
         echo $gv->renderImage($graph, $format);
         exit;
