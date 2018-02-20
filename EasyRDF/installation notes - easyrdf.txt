@@ -64,7 +64,11 @@ graphviz-2.38.msi
 https://graphviz.gitlab.io/
 https://graphviz.gitlab.io/download/
 https://graphviz.gitlab.io/_pages/Download/Download_windows.html
+https://graphviz.gitlab.io/_pages/Download/windows/graphviz-2.38.msi
 
 I added the location of the the graphviz bin folder to the windows path.
 Control Panel, System, Advanced system settings, Environment Variables, User Variables - Path, Edit, New: D:\Program Files (x86)\programming\Graphviz2.38\bin
+
+5. Make a required change (fixing a bug) to GraphViz.php for it to work,
+see GraphViz.txt
 
