@@ -14,6 +14,11 @@ using VDS.RDF.Query;
 using VDS.RDF.Query.Datasets;
 using VDS.RDF.Writing.Formatting;
 
+/*
+Authors:
+Jevan Pipitone, Last Edit 19 Feb 2018, based on the dotnetrdf examples, links shown in the code below
+*/
+
 namespace Dotnetrdf_Test
 {
     public partial class Form1 : Form
@@ -53,9 +58,7 @@ namespace Dotnetrdf_Test
                 SparqlQuery q2 = parser.ParseFromString("PREFIX : <http://example.org/relatives#> SELECT * WHERE { ?a ?b ?c }");
                 var results2 = processor.ProcessQuery(q2);
                 tbOutput.Text += "Results for * query of all triples:" + Environment.NewLine;
-                /*
-                
-                */
+
                 // https://github.com/dotnetrdf/dotnetrdf/wiki/UserGuide-Working-With-Triple-Stores
                 if (results2 is SparqlResultSet)
                 {

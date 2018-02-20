@@ -16,6 +16,11 @@
      * @license    http://unlicense.org/
      */
 
+/*
+Other authors that have modified the code:
+Jevan Pipitone, Last Edit 20 February 2018
+*/
+
     set_include_path(get_include_path() . PATH_SEPARATOR . '../lib/');
     //require_once "EasyRdf.php"; // jevan 2018jan28
     require 'vendor/autoload.php'; // jevan 2018jan28

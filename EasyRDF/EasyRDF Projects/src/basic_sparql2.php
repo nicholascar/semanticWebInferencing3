@@ -15,6 +15,11 @@
      * @license    http://unlicense.org/
      */
 
+/*
+  Other Authors that modified the code:
+  Jevan Pipitone, Last Edited 28 January 2018
+*/
+
     set_include_path(get_include_path() . PATH_SEPARATOR . '../lib/');
     // require_once "EasyRdf.php";
     require_once "../include/html_tag_helpers.php";

@@ -1,6 +1,10 @@
 <?php
 require_once( "inc/sparqllib.php" );
 
+/*
+Author: Jevan Pipitone, Last Edit 19 February 2018, most of the code was taken from the examples http://graphite.ecs.soton.ac.uk/sparqllib/
+*/
+
 $endpoint = 'http://127.0.0.1:3030/relativesWithOwlInferencingAndOpenlletReasoner/query';
 $query = 'PREFIX : <http://example.org/relatives#> ' .
 'SELECT ?gc ?gp' .

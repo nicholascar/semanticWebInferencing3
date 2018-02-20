@@ -2,6 +2,11 @@
 require 'vendor/autoload.php';
 require 'inc/Graphite.php';
 
+/*
+Authors:
+Jevan Pipitone, Last Edit 19 February 2018, based on code snippets from the PHP Graphite Documentation Online
+*/
+
 $graph = new Graphite();
 
 // Graphite works with sparql construct only, which returns RDF not a table of results
