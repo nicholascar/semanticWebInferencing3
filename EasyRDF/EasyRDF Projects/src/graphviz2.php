@@ -16,10 +16,10 @@
      * @license    http://unlicense.org/
      */
 
-/*
-Other authors that have modified the code:
-Jevan Pipitone, Last Edit 21 February 2018
-*/
+     /*
+     Other authors that have modified the code:
+     Jevan Pipitone, Last Edit 21 February 2018
+     */
 
     set_include_path(get_include_path() . PATH_SEPARATOR . '../lib/');
     //require_once "EasyRdf.php"; // jevan 2018jan28
@@ -59,7 +59,7 @@ Rending a graph to an image will only work if you have the GraphViz 'dot' comman
 
     // If this is a request for the image, just render it and exit
     //if (isset($image)) { // jevan 2018jan28
-    if ($image) { // jevan 2018jan28
+    if ($image) { // jevan 2018feb21
         header("Content-Type: ".$format->getDefaultMimeType());
         echo $gv->renderImage($graph, $format);
         exit;

@@ -16,21 +16,9 @@
      * @license    http://unlicense.org/
      */
 
-     /*
-     Other authors that have modified the code:
-     Jevan Pipitone, Last Edit 21 February 2018
-     */
-
     set_include_path(get_include_path() . PATH_SEPARATOR . '../lib/');
-    //require_once "EasyRdf.php"; // jevan 2018jan28
-    require 'vendor/autoload.php'; // jevan 2018jan28
-    require_once "../include/html_tag_helpers.php"; // jevan 2018jan28
-
-    // jevan 2018jan28
-    $format = "png";
-    $image = 1;
-    $ul = 1;
-    $ol = 0;
+    require_once "EasyRdf.php";
+    require_once "html_tag_helpers.php";
 
     $formats = array(
       'PNG' => 'png',
@@ -39,7 +27,7 @@
     );
 
     $format = EasyRdf_Format::getFormat(
-        isset($format) ? $format : 'png' // jevan 2018jan28
+        isset($_REQUEST['format']) ? $_REQUEST['format'] : 'png'
     );
 
     // Construct a graph of three people
@@ -56,26 +44,43 @@
     $alice->add('foaf:knows', $bob);
     $alice->add('foaf:knows', $carol);
 
-    /*
-    http://www.easyrdf.org/examples
-    Using the 'Use Labels' option, you can have resource URIs replaced with text based labels
-    and using 'Only Labelled' option, only the resources and properties with a label will be displayed.
-    Rending a graph to an image will only work if you have the GraphViz 'dot' command installed.
-    */
     // Create a GraphViz serialiser
     $gv = new EasyRdf_Serialiser_GraphViz();
-    $gv->setUseLabels($ul); // jevan 2018jan28
-    $gv->setOnlyLabelled($ol); // jevan 2018jan28
+    $gv->setUseLabels(isset($_REQUEST['ul']));
+    $gv->setOnlyLabelled(isset($_REQUEST['ol']));
 
     // If this is a request for the image, just render it and exit
-    //if (isset($image)) { // jevan 2018jan28
-    if ($image) { // jevan 2018feb21
+    if (isset($_REQUEST['image'])) {
         header("Content-Type: ".$format->getDefaultMimeType());
         echo $gv->renderImage($graph, $format);
         exit;
     }
-    // jevan 2018jan28
+?>
+<html>
+<head><title>EasyRdf GraphViz Example</title></head>
+<body>
+<h1>EasyRdf GraphViz Example</h1>
+
+<form action='' method='get'>
+<?php
+    echo label_tag('format').' '.select_tag('format', $formats).tag('br');
+    echo label_tag('ul', 'Use labels:').' '.check_box_tag('ul').tag('br');
+    echo label_tag('ol', 'Only labelled:').' '.check_box_tag('ol').tag('br');
+    echo submit_tag();
+?>
+</form>
+
+<div>
+    <img src='?image&<?=$_SERVER["QUERY_STRING"]?>' />
+</div>
+
+<pre style="margin: 0.5em; padding:0.5em; background-color:#eee; border:dashed 1px grey;">
+<?php
     print htmlspecialchars(
         $gv->serialise($graph, 'dot')
     );
 ?>
+</pre>
+
+</body>
+</html>
