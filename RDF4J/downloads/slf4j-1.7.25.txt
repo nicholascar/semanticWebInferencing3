@@ -1,0 +1,14 @@
+https://www.slf4j.org/download.html
+https://www.slf4j.org/manual.html
+
+From the "manual.html" page above it can be seen that the minimum to get
+slf4j working is to place into lib
+
+slf4j-api-1.7.25.jar
+slf4j-simple-1.7.25.jar
+
+and perhaps to add the following imports to my java program
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+

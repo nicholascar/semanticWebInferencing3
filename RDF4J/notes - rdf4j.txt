@@ -1,0 +1,5 @@
+https://github.com/eclipse/rdf4j/releases/tag/2.2.4
+http://rdf4j.org/download/
+Downloaded "RDF4J 2.2.4 onejar" eclipse-rdf4j-2.2.4-onejar.jar
+
+http://docs.rdf4j.org/programming/

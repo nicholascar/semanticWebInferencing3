@@ -1,0 +1,7 @@
+https://hc.apache.org/downloads.cgi
+
+add
+    apache-httpcomponents-httpcore.jar
+    httpclient-4.5.3.jar
+    httpclient-cache-4.5.3.jar
+

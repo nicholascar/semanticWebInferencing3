@@ -1,0 +1,23 @@
+Grandparents query using Apache Fuseki. There are a total of 7 results.
+
+?gc = http://example.org/relatives#James
+?gp = http://example.org/relatives#Cathy
+
+?gc = http://example.org/relatives#Jacob
+?gp = http://example.org/relatives#Cathy
+
+?gc = http://example.org/relatives#Tim
+?gp = http://example.org/relatives#Michael
+
+?gc = http://example.org/relatives#Simon
+?gp = http://example.org/relatives#John
+
+?gc = http://example.org/relatives#Michael
+?gp = http://example.org/relatives#James2
+
+?gc = http://example.org/relatives#Fred
+?gp = http://example.org/relatives#Bill
+
+?gc = http://example.org/relatives#Mary
+?gp = http://example.org/relatives#James2
+

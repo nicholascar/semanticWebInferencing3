@@ -1,0 +1,15 @@
+set "libraries=..\lib\*;..\lib\httpcomponents-client-4.5.5\*"
+set "output=..\output-rdf4j"
+set "javac="C:\Program Files\Java\jdk-9.0.4\bin\javac""
+set "java="C:\Program Files\Java\jdk-9.0.4\bin\java""
+@rem set "javaargs=-Xms1G -Xmx8G"
+
+cd src
+
+set "program=rdf4jTest2"
+%javac% -classpath "%libraries%" %program%.java 2> %output%\%program%_compile.txt
+%java% -classpath ".;%libraries%" %javaargs% %program% > %output%\%program%_output1.txt 2> %output%\%program%_output2.txt
+
+set "program=rdf4jTest1"
+%javac% -classpath "%libraries%" %program%.java 2> %output%\%program%_compile.txt
+%java% -classpath ".;%libraries%" %javaargs% %program% > %output%\%program%_output1.txt 2> %output%\%program%_output2.txt
