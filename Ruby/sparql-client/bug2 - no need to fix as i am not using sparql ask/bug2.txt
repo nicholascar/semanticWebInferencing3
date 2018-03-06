@@ -1,0 +1,23 @@
+The following ruby program
+
+require 'rubygems'
+require 'sparql/client'
+sparql = SPARQL::Client.new("http://127.0.0.1:3030/relativesWithOwlInferencingAndOpenlletReasoner/query")
+result = sparql.query("ASK WHERE { ?s ?p ?o }")
+#result = sparql.query("PREFIX : <http://example.org/relatives#> ASK WHERE { ?gc :hasGrandparent ?gp . ?gc a :Person . }")
+puts result.inspect   #=> true or false
+
+gives output
+
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sparql-client-3.0.0/lib/sparql/client.rb:351:in `block in response': Error 500: org/jgrapht/DirectedGraph (SPARQL::Client::ServerError)
+
+
+Fuseki - version 3.4.0 (Build date: 2017-07-17T11:43:07+0000)
+ Processing query SELECT * WHERE { ?s ?p ?o }
+	from C:/Ruby24/lib/ruby/gems/2.4.0/gems/sparql-client-3.0.0/lib/sparql/client.rb:704:in `block in request'
+	from C:/Ruby24/lib/ruby/gems/2.4.0/gems/sparql-client-3.0.0/lib/sparql/client.rb:700:in `times'
+	from C:/Ruby24/lib/ruby/gems/2.4.0/gems/sparql-client-3.0.0/lib/sparql/client.rb:700:in `request'
+	from C:/Ruby24/lib/ruby/gems/2.4.0/gems/sparql-client-3.0.0/lib/sparql/client.rb:344:in `response'
+	from C:/Ruby24/lib/ruby/gems/2.4.0/gems/sparql-client-3.0.0/lib/sparql/client.rb:305:in `query'
+	from program1.rb:4:in `<main>'
+

@@ -1,0 +1,2 @@
+ruby program1.rb > program1-output1.txt 2> program1-output2.txt
+

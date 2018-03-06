@@ -1,0 +1,34 @@
+1. https://github.com/ruby-rdf/rdf-reasoner
+
+Does not appear to support Sparql queries so I have skipped this
+
+2. Librdf
+
+https://www.w3.org/2001/sw/wiki/SemanticWebTools#Ruby_Developers
+
+http://librdf.org/
+http://librdf.org/docs/ruby.html
+http://download.librdf.org/
+http://download.librdf.org/binaries/win32/
+http://librdf.org/docs/rdoc/index.html
+http://librdf.org/docs/rdoc/Redland/Query.html
+
+http://download.librdf.org/binaries/win32/README.txt
+Says that librdf which also support ruby, the windows binaries are old and out of date
+So I will not be trying to use librdf
+
+3. http://ruby-rdf.github.io/sparql-client/
+
+First do:
+gem install sparql-client
+
+This is the method I am using (sparql-client) to do sparql reasoning with Ruby
+using a Apache Fuseki endpoint.
+
+4. Installing Ruby
+
+https://stackoverflow.com/questions/18908708/installing-ruby-gem-in-windows
+Run the extra installation at the end to install the DevelopmentKit. If you forgot to do that, run ridk install in your windows console to install it.
+https://rubyinstaller.org/downloads/
+Add your Ruby install to PATH! eg C:\Ruby24\bin
+

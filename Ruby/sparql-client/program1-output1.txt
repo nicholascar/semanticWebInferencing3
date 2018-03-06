@@ -1,0 +1,44 @@
+Number of solutions in results: 7
+
+gc (full URI): "http://example.org/relatives#James"
+gc (URI fragment): "James"
+gp (full URI): "http://example.org/relatives#Cathy"
+gp (URI fragment): "Cathy"
+Full solution item: #<RDF::Query::Solution:0x287541c({:gc=>#<RDF::URI:0x25b3060 URI:http://example.org/relatives#James>, :gp=>#<RDF::URI:0x25b2fdc URI:http://example.org/relatives#Cathy>})>
+
+gc (full URI): "http://example.org/relatives#Jacob"
+gc (URI fragment): "Jacob"
+gp (full URI): "http://example.org/relatives#Cathy"
+gp (URI fragment): "Cathy"
+Full solution item: #<RDF::Query::Solution:0x2875320({:gc=>#<RDF::URI:0x28753c8 URI:http://example.org/relatives#Jacob>, :gp=>#<RDF::URI:0x2875374 URI:http://example.org/relatives#Cathy>})>
+
+gc (full URI): "http://example.org/relatives#Tim"
+gc (URI fragment): "Tim"
+gp (full URI): "http://example.org/relatives#Michael"
+gp (URI fragment): "Michael"
+Full solution item: #<RDF::Query::Solution:0x2875224({:gc=>#<RDF::URI:0x28752d8 URI:http://example.org/relatives#Tim>, :gp=>#<RDF::URI:0x2875278 URI:http://example.org/relatives#Michael>})>
+
+gc (full URI): "http://example.org/relatives#Simon"
+gc (URI fragment): "Simon"
+gp (full URI): "http://example.org/relatives#John"
+gp (URI fragment): "John"
+Full solution item: #<RDF::Query::Solution:0x2875110({:gc=>#<RDF::URI:0x28751dc URI:http://example.org/relatives#Simon>, :gp=>#<RDF::URI:0x2875170 URI:http://example.org/relatives#John>})>
+
+gc (full URI): "http://example.org/relatives#Michael"
+gc (URI fragment): "Michael"
+gp (full URI): "http://example.org/relatives#James2"
+gp (URI fragment): "James2"
+Full solution item: #<RDF::Query::Solution:0x2875014({:gc=>#<RDF::URI:0x28750c8 URI:http://example.org/relatives#Michael>, :gp=>#<RDF::URI:0x2875068 URI:http://example.org/relatives#James2>})>
+
+gc (full URI): "http://example.org/relatives#Fred"
+gc (URI fragment): "Fred"
+gp (full URI): "http://example.org/relatives#Bill"
+gp (URI fragment): "Bill"
+Full solution item: #<RDF::Query::Solution:0x2874ed0({:gc=>#<RDF::URI:0x2874fc0 URI:http://example.org/relatives#Fred>, :gp=>#<RDF::URI:0x2874f30 URI:http://example.org/relatives#Bill>})>
+
+gc (full URI): "http://example.org/relatives#Mary"
+gc (URI fragment): "Mary"
+gp (full URI): "http://example.org/relatives#James2"
+gp (URI fragment): "James2"
+Full solution item: #<RDF::Query::Solution:0x2874dec({:gc=>#<RDF::URI:0x2874e94 URI:http://example.org/relatives#Mary>, :gp=>#<RDF::URI:0x2874e40 URI:http://example.org/relatives#James2>})>
+
