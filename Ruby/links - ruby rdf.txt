@@ -30,5 +30,11 @@ using a Apache Fuseki endpoint.
 https://stackoverflow.com/questions/18908708/installing-ruby-gem-in-windows
 Run the extra installation at the end to install the DevelopmentKit. If you forgot to do that, run ridk install in your windows console to install it.
 https://rubyinstaller.org/downloads/
-Add your Ruby install to PATH! eg C:\Ruby24\bin
+Add your Ruby install to User variable "Path"
+using control panel, system, Advanced system settings, Environment variables.
+For example mine is C:\Ruby24\bin
+
+Doing a "ruby -v" from cmd.exe reveals my current ruby version:
+ ruby 2.4.1p111 (2017-03-22 revision 58053) [i386-mingw32]
+and I think it was installed using: rubyinstaller-2.4.1-2-x86.exe
 
