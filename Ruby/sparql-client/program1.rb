@@ -1,5 +1,9 @@
 # http://ruby-rdf.github.io/sparql-client/
 # http://www.rubydoc.info/github/ruby-rdf/rdf/RDF/URI
+#
+# Authors:
+# Jevan Pipitone, Last Edit: 6 March 2018
+#
 require 'rubygems'
 require 'sparql/client'
 sparql = SPARQL::Client.new("http://127.0.0.1:3030/relativesTdbWithOwlInferencingAndOpenlletReasoner/query")
