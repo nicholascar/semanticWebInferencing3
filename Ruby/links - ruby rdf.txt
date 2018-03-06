@@ -19,7 +19,7 @@ So I will not be trying to use librdf
 
 3. http://ruby-rdf.github.io/sparql-client/
 
-First do:
+After installing ruby and ruby is in the path, from a command prompt (cmd.exe) type:
 gem install sparql-client
 
 This is the method I am using (sparql-client) to do sparql reasoning with Ruby
