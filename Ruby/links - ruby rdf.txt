@@ -1,8 +1,21 @@
-1. https://github.com/ruby-rdf/rdf-reasoner
+1. Installing Ruby
+
+https://stackoverflow.com/questions/18908708/installing-ruby-gem-in-windows
+Run the extra installation at the end to install the DevelopmentKit. If you forgot to do that, run ridk install in your windows console to install it.
+https://rubyinstaller.org/downloads/
+Add your Ruby install to User variable "Path"
+using control panel, system, Advanced system settings, Environment variables.
+For example mine is C:\Ruby24\bin
+
+Doing a "ruby -v" from cmd.exe reveals my current ruby version:
+ ruby 2.4.1p111 (2017-03-22 revision 58053) [i386-mingw32]
+and I think it was installed using: rubyinstaller-2.4.1-2-x86.exe
+
+2A. https://github.com/ruby-rdf/rdf-reasoner
 
 Does not appear to support Sparql queries so I have skipped this
 
-2. Librdf
+2B. Librdf
 
 https://www.w3.org/2001/sw/wiki/SemanticWebTools#Ruby_Developers
 
@@ -19,22 +32,30 @@ So I will not be trying to use librdf
 
 3. http://ruby-rdf.github.io/sparql-client/
 
-After installing ruby and ruby is in the path, from a command prompt (cmd.exe) type:
-gem install sparql-client
-
 This is the method I am using (sparql-client) to do sparql reasoning with Ruby
 using a Apache Fuseki endpoint.
 
-4. Installing Ruby
+After installing ruby and ruby is in the path, from a command prompt (cmd.exe) type:
+gem install sparql-client
 
-https://stackoverflow.com/questions/18908708/installing-ruby-gem-in-windows
-Run the extra installation at the end to install the DevelopmentKit. If you forgot to do that, run ridk install in your windows console to install it.
-https://rubyinstaller.org/downloads/
-Add your Ruby install to User variable "Path"
-using control panel, system, Advanced system settings, Environment variables.
-For example mine is C:\Ruby24\bin
+Then start apache fuseki if not already by running the following batch file:
+D:\Programming\apache-jena-fuseki-3.4.0 openllet\fuseki-server.bat
 
-Doing a "ruby -v" from cmd.exe reveals my current ruby version:
- ruby 2.4.1p111 (2017-03-22 revision 58053) [i386-mingw32]
-and I think it was installed using: rubyinstaller-2.4.1-2-x86.exe
+Then run ruby on the program:
+In this folder: _github\semanticWebInferencing3\Ruby\sparql-client\
+rename runProgram.bat.txt to runProgram.bat and run it
+
+Then look at the output from having run ruby on program1.rb:
+In this folder: _github\semanticWebInferencing3\Ruby\sparql-client\
+program1-output1.txt
+program1-output2.txt
+
+It is not actually necessary to start apache fuseki
+and run ruby on the program, since it has already been done,
+so it is possible just to look at the two output textfiles from
+when I ran it.
+
+To view the ruby source code look at:
+In this folder: _github\semanticWebInferencing3\Ruby\sparql-client\
+program1.rb
 
