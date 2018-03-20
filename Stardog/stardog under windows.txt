@@ -1,11 +1,12 @@
 Using stardog community edition (for noncommercial use only) downloaded on 2018mar21.
 
-set user environment variable STARDOG_HOME to D:\Programming\stardog-5.2.2
+set user environment variable STARDOG_HOME to D:\Programming\stardog-5.2.2 (under control panel, system, Advanced System Settings, Environment Variables)
 cmd.exe
 COPY /B stardog-license-key.bin %STARDOG_HOME%
-stardog-admin.bat server start
+%STARDOG_HOME%\bin\stardog-admin.bat server start
 leave this window open and open a new command prompt window to continue
 rem first i copied relatives.ttl to D:\Programming\stardog-5.2.2
+cd %STARDOG_HOME%\bin\
 stardog-admin.bat db create -n myRelativesDB ..\relatives.ttl
 del ..\relatives.ttl
 rem reasoning type options are RDFS, SL, QL, RL, EL, DL, NONE
