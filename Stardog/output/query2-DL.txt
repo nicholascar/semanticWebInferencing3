@@ -1,0 +1,13 @@
++----------+
+|    gp    |
++----------+
+| :Cathy   |
+| :Michael |
+| :Cathy   |
+| :Bill    |
+| :James2  |
+| :James2  |
+| :John    |
++----------+
+
+Query returned 7 results in 00:00:00.058

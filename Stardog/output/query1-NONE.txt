@@ -1,0 +1,10 @@
++---------+----------+
+|    s    |    o     |
++---------+----------+
+| :Fred   | :James   |
+| :James2 | :John    |
+| :John   | :Mary    |
+| :John   | :Michael |
++---------+----------+
+
+Query returned 4 results in 00:00:00.046

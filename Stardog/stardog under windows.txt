@@ -1,0 +1,20 @@
+set user environment variable STARDOG_HOME to D:\Programming\stardog-5.2.2
+cmd.exe
+COPY /B stardog-license-key.bin %STARDOG_HOME%
+stardog-admin.bat server start
+leave this window open and open a new command prompt window to continue
+rem first i copied relatives.ttl to D:\Programming\stardog-5.2.2
+stardog-admin.bat db create -n myRelativesDB ..\relatives.ttl
+del ..\relatives.ttl
+rem reasoning type options are RDFS, SL, QL, RL, EL, DL, NONE
+http://localhost:5820/myRelativesDB
+
+Java in path is:
+C:\Program Files\Java\jre1.8.0_161\bin
+
+https://github.com/stardog-union/stardog-docs/wiki/Reasoning-chapter-(Stardog-2.0)
+https://www.stardog.com/docs/
+https://www.stardog.com/docs/?utm_campaign=Stardog%3A%20Product%20Download&utm_source=hs_automation&utm_medium=email&utm_content=57254532&_hsenc=p2ANqtz--3P0op_gAvj89exYXOpx7Z79AaPn_XPAK5XezWcUa8G4XW_0wx9pvc0Gs9LKVhnALrnlyZm5jwIu1ESPRvCqhUGFDwOA&_hsmi=57254532#_quick_start_guide
+stardog runs on Java 8 (64bit or 32bit)
+https://stackoverflow.com/questions/44872479/cant-infer-an-interesting-pizza/44881743#44881743
+

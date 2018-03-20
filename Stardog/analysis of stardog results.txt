@@ -1,0 +1,11 @@
+Query1:
+11 results for DL, QL, RL, SL (results are all the same except DL the order of returned results differs)
+4 results for EL, NONE, RDFS (results all the same)
+
+Query2:
+7 results including two duplicates (James2 & Cathy occur twice) for DL, otherwise same as EL
+5 results for EL, RL, SL (results all same except EL the order of returned results differs)
+0 results for NONE, QL, RDFS
+
+
+

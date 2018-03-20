@@ -1,0 +1,51 @@
+rem %STARDOG_HOME%\bin\stardog.bat query --reasoning myRelativesDB "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX : <http://example.org/relatives#> SELECT * WHERE { ?s :hasChi
+
+rem reasoning type options are RDFS, SL, QL, RL, EL, DL, NONE
+set "reasoningType=RDFS"
+call :query1
+set "reasoningType=SL"
+call :query1
+set "reasoningType=QL"
+call :query1
+set "reasoningType=RL"
+call :query1
+set "reasoningType=EL"
+call :query1
+set "reasoningType=DL"
+call :query1
+set "reasoningType=NONE"
+call :query1
+
+rem reasoning type options are RDFS, SL, QL, RL, EL, DL, NONE
+set "reasoningType=RDFS"
+call :query2
+set "reasoningType=SL"
+call :query2
+set "reasoningType=QL"
+call :query2
+set "reasoningType=RL"
+call :query2
+set "reasoningType=EL"
+call :query2
+set "reasoningType=DL"
+call :query2
+set "reasoningType=NONE"
+call :query2
+goto :eof
+
+:query1
+call %STARDOG_HOME%\bin\stardog-admin db offline myRelativesDB
+call %STARDOG_HOME%\bin\stardog-admin metadata set -o reasoning.type=%reasoningType% myRelativesDB
+call %STARDOG_HOME%\bin\stardog-admin db online myRelativesDB
+call %STARDOG_HOME%\bin\stardog.bat query --reasoning myRelativesDB "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX : <http://example.org/relatives#> SELECT * WHERE { ?s :hasChild ?o . }" > output\query1-%reasoningType%.txt
+goto :eof
+
+:query2
+call %STARDOG_HOME%\bin\stardog-admin db offline myRelativesDB
+call %STARDOG_HOME%\bin\stardog-admin metadata set -o reasoning.type=%reasoningType% myRelativesDB
+call %STARDOG_HOME%\bin\stardog-admin db online myRelativesDB
+call %STARDOG_HOME%\bin\stardog.bat query --reasoning myRelativesDB "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX : <http://example.org/relatives#> SELECT ?gp WHERE { ?gc :hasGrandparent ?gp . ?gc a :Person . }" > output\query2-%reasoningType%.txt
+goto :eof
+
+:eof
+

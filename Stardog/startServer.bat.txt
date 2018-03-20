@@ -1,0 +1,1 @@
+call %STARDOG_HOME%\bin\stardog-admin.bat server start

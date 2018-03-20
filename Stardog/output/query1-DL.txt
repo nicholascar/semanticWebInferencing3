@@ -1,0 +1,17 @@
++----------+----------+
+|    s     |    o     |
++----------+----------+
+| :Cathy   | :Fred    |
+| :John    | :Michael |
+| :John    | :Mary    |
+| :Fred    | :Jacob   |
+| :Fred    | :James   |
+| :James2  | :John    |
+| :Michael | :Simon   |
+| :Valerie | :Tim     |
+| :Bill    | :Cathy   |
+| :Bill    | :Bob     |
+| :Simon   | :Tim     |
++----------+----------+
+
+Query returned 11 results in 00:00:00.083
