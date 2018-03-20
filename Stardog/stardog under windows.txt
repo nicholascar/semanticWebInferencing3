@@ -1,3 +1,5 @@
+Using stardog community edition (for noncommercial use only) downloaded on 2018mar21.
+
 set user environment variable STARDOG_HOME to D:\Programming\stardog-5.2.2
 cmd.exe
 COPY /B stardog-license-key.bin %STARDOG_HOME%
